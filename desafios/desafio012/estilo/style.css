@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-header {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
 
 * {
     margin: 0px;
@@ -12,21 +7,63 @@ header {
     font-size: 1em;
 
 }
+
+html, body {
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-
-    font-size: 10vw;
-
 }
+
 
 header > p {
     padding-bottom: 50px;
 }
 
-#imagem01 {
-    background-image: url('imagens/background001.jpg');
-    background-position: right center;
-
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
